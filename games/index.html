@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — Fortune Game Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="Fortune Game Studio">
+        <span class="logo-icon">&#9830;</span>
+        Fortune Game Studio
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" href="/games/">Games</a>
+        <a class="nav-link">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <h1 class="page-title">Our Games</h1>
+      <div class="games-grid">
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="../assets/images/knights-tale.png" alt="Knight's Tale">
+          </div>
+          <div class="game-card-body">
+            <h2 class="game-card-name">Knight's Tale</h2>
+            <a class="btn-play-demo" href="/games/knights-tale-demo/">Play Demo</a>
+          </div>
+        </div>
+        <div class="game-card-empty">
+          <span>Coming Soon</span>
+        </div>
+        <div class="game-card-empty">
+          <span>Coming Soon</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
