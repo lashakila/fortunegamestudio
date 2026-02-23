@@ -478,13 +478,24 @@ body {
     min-height: 160px;
   }
 
-  /* Game page mobile: fullscreen iframe, no header */
-  .game-page .header {
+  /* Game page mobile: true fullscreen */
+  .game-page,
+  .game-page html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .game-page .header,
+  .game-page #particle-canvas {
     display: none;
   }
 
+  .game-page main,
   .game-page .page-section {
     padding: 0;
+    margin: 0;
+    max-width: none;
+    height: 100%;
   }
 
   .game-page .back-btn {
@@ -498,7 +509,7 @@ body {
     border: 1px solid rgba(255, 215, 0, 0.15);
     border-radius: 8px;
     color: var(--text-primary);
-    margin-bottom: 0;
+    margin: 0;
     padding: 0.5rem 0.9rem;
     font-size: 0.82rem;
   }
@@ -507,10 +518,12 @@ body {
     border: none;
     border-radius: 0;
     margin: 0;
+    height: 100%;
   }
 
   .game-page .game-iframe {
     height: 100vh;
+    height: 100dvh;
   }
 }
 
