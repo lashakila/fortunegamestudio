@@ -428,10 +428,10 @@ body {
 }
 
 .game-frame-container {
-  border: 1px solid rgba(255, 215, 0, 0.12);
-  border-radius: 8px;
+  border: none;
+  border-radius: 0;
   overflow: hidden;
-  margin: 0 1rem;
+  margin: 0;
   position: relative;
 }
 
